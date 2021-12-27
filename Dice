@@ -1,0 +1,6 @@
+import random
+die_1 = random.randint(1,6)
+die_2 = random.randint(1,6)
+die_sum = die_1 + die_2
+print("You have rolled a" + " " + str(die_1) + " " + "and a" + " " + str(die_2) + ".")
+print("You can move forward " + str(die_sum) + " places ")
