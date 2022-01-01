@@ -1,6 +1,64 @@
+
+#Dice Function
 import random
 die_1 = random.randint(1,6)
 die_2 = random.randint(1,6)
 die_sum = die_1 + die_2
-print("You have rolled a" + " " + str(die_1) + " " + "and a" + " " + str(die_2) + ".")
-print("You can move forward " + str(die_sum) + " places ")
+    
+while True:
+    print("Type 'Roll' to roll the dice.")
+    roll = input()
+    if roll == "Roll":
+        break
+#Print if statement
+if int(die_1) == int(die_2):
+    print("You have rolled a" + " " + str(die_1) + " " + "and a" + " " + str(die_2) + ". Doubles!")
+    print("You can move forward " + str(die_sum) + " places and roll again!")
+else:
+    print("You have rolled a" + " " + str(die_1) + " " + "and a" + " " + str(die_2) + ".")
+    print("You can move forward " + str(die_sum) + " places ")
+#Print Board Location
+# Board Dictionary
+dict_monopoly_spaces = {}
+dict_monopoly_spaces[0] = 'Go'
+dict_monopoly_spaces[1] = 'Mediterranean Avenue'
+dict_monopoly_spaces[2] = 'Community Chest'
+dict_monopoly_spaces[3] = 'Baltic Avenue'
+dict_monopoly_spaces[4] = 'Income Tax'
+dict_monopoly_spaces[5] = 'Reading Railroad'
+dict_monopoly_spaces[6] = 'Oriental Avenue'
+dict_monopoly_spaces[7] = 'Chance'
+dict_monopoly_spaces[8] = 'Vermont Avenue'
+dict_monopoly_spaces[9] = 'Connecticut Avenue'
+dict_monopoly_spaces[10] = 'Jail / Just Visiting'
+dict_monopoly_spaces[11] = 'St. Charles Place'
+dict_monopoly_spaces[12] = 'Electric Company'
+dict_monopoly_spaces[13] = 'States Avenue'
+dict_monopoly_spaces[14] = 'Virginia Avenue'
+dict_monopoly_spaces[15] = 'Pennsylvania Railroad'
+dict_monopoly_spaces[16] = 'St. James Place'
+dict_monopoly_spaces[17] = 'Community Chest'
+dict_monopoly_spaces[18] = 'Tennessee Avenue'
+dict_monopoly_spaces[19] = 'New York Avenue'
+dict_monopoly_spaces[20] = 'Free Parking'
+dict_monopoly_spaces[21] = 'Kentucky Avenue'
+dict_monopoly_spaces[22] = 'Chance'
+dict_monopoly_spaces[23] = 'Indiana Avenue'
+dict_monopoly_spaces[24] = 'Illinois Avenue'
+dict_monopoly_spaces[25] = 'B. & O. Railroad'
+dict_monopoly_spaces[26] = 'Atlantic Avenue'
+dict_monopoly_spaces[27] = 'Ventnor Avenue'
+dict_monopoly_spaces[28] = 'Water Works'
+dict_monopoly_spaces[29] = 'Marvin Gardens'
+dict_monopoly_spaces[30] = 'Go To Jail'
+dict_monopoly_spaces[31] = 'Pacific Avenue'
+dict_monopoly_spaces[32] = 'North Carolina Avenue'
+dict_monopoly_spaces[33] = 'Community Chest'
+dict_monopoly_spaces[34] = 'Pennsylvania Avenue'
+dict_monopoly_spaces[34] = 'Short Line'
+dict_monopoly_spaces[35] = 'Chance'
+dict_monopoly_spaces[36] = 'Park Place'
+dict_monopoly_spaces[37] = 'Luxury Tax'
+dict_monopoly_spaces[38] = 'Boardwalk'
+
+print("You Have Landed on " + dict_monopoly_spaces[int(die_sum)] + ".")
